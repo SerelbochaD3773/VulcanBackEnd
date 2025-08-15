@@ -1,4 +1,4 @@
-package tasks.useCases;
+package instructor.useCases;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import tasks.models.Task;
 public class TaskUseCase {
 
     // Propiedad
-    private final List<Task> tasks; // Definicion Lista en memoria
+    private final List<Student> tasks; // Definicion Lista en memoria
 
     // Constructor
     public TaskUseCase() {
@@ -19,7 +19,7 @@ public class TaskUseCase {
     // CREATE
     public String create(String name, String description) {
         try {
-            Task task = new Task(name, description, false);
+            Student task = new Student(name, description, false);
             this.tasks.add(task); // Uso de la lista
             return "Tarea Creada:" + task.getName() + " Descripcion:" + task.getDescription();
         }
