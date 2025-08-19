@@ -1,21 +1,20 @@
-package student.useCases;
-
+package instructor.useCases;
 import java.util.ArrayList;
 import java.util.List;
-
-import student.models.Student;
+import instructor.models.Instructor;
 
 // Contenedor de metodos y atributos
-public class StudentUseCase {
+public class InstructorUseCase {
 
     // Propiedad
-    private final List<Student> students; // Definicion Lista en memoria
-    
+    private final List<Instructor> instructors; // Definicion Lista en memoria
 
     // Constructor
-    public StudentUseCase() {
-        this.students = new ArrayList<>(); // Inicializacion - Preparar el uso de la lista.
+    public InstructorUseCase() {
+        this.instructors = new ArrayList<>(); // Inicializacion - Preparar el uso de la lista.
     }
+
+    
 
     // CREATE
     public String create(String idUser, String name, String career, String phone, String email, String password) {
