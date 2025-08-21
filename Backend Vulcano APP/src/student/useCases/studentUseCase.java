@@ -21,7 +21,7 @@ public class StudentUseCase {
     public String create(String idUser, String name, String career, String phone, String email, String password) {
         try {
             Student student = new Student(name, idUser, career, phone, email, password);
-            this.student.add(student); // Uso de la lista
+            this.students.add(student); // Uso de la lista
             return "Estudiante Creado:" + student.getName() + " Iduser:" + student.getIdUser() + " Carrera:" + student.getCareer() + " Telefono:" + student.getPhone() + " Email:" + student.getEmail();
         }
         catch (Exception e) {

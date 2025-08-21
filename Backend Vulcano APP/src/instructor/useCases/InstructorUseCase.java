@@ -19,9 +19,9 @@ public class InstructorUseCase {
     // CREATE
     public String create(String idUser, String name, String career, String phone, String email, String password) {
         try {
-            Student student = new Student(name, idUser, career, phone, email, password);
-            this.student.add(student); // Uso de la lista
-            return "Estudiante Creado:" + student.getName() + " Iduser:" + student.getIdUser() + " Carrera:" + student.getCareer() + " Telefono:" + student.getPhone() + " Email:" + student.getEmail();
+            Instructor instructor = new Instructor(name, idUser, career, phone, email, password);
+            this.instructors.add(instructor); // Uso de la lista
+            return "Instructor Creado:" + instructor.getName() + " Iduser:" + instructor.getIdUser() + " Especialidad:" + instructor.getSpecialty() + " Telefono:" + instructor.getPhone() + " Email:" + instructor.getEmail();
         }
         catch (Exception e) {
             return "Ha ocurrido un error, por favor intentelo nuevo";
