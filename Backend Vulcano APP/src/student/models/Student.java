@@ -70,42 +70,42 @@ public class Student {
         this.password = password;
     }
 
-    // iniciar sesion
-    public boolean iniciarSesion(String name, String password) {
+    // //* iniciar sesion
+    // public boolean iniciarSesion(String name, String password) {
 
-        return this.name.equals(name) && this.password.equals(password);
-    }
+    //     return this.name.equals(name) && this.password.equals(password);
+    // }
 
 
-     // Cerrar la sesión del usuario actual.
-    public void cerrarSesion() {
-        System.out.println("Sesión cerrada para el usuario: " + this.name);
-    }
+    //  // Cerrar la sesión del usuario actual.
+    // public void cerrarSesion() {
+    //     System.out.println("Sesión cerrada para el usuario: " + this.name);
+    // }
 
-    // Cambiar la contraseña del usuario.
+    // // Cambiar la contraseña del usuario.
     
-    public boolean cambiarContrasena(String nuevaContrasena) {
-        // Aquí puedes agregar validaciones (ej. longitud mínima, caracteres especiales).
-        if (nuevaContrasena != null && nuevaContrasena.length() >= 8) {
-            this.password = nuevaContrasena; 
-            System.out.println("Contraseña cambiada exitosamente.");
-            return true;
-        } else {
-            System.out.println("Error: La nueva contraseña debe tener al menos 8 caracteres.");
-            return false;
-        }
-    }
+    // public boolean cambiarContrasena(String nuevaContrasena) {
+    //     // Aquí puedes agregar validaciones (ej. longitud mínima, caracteres especiales).
+    //     if (nuevaContrasena != null && nuevaContrasena.length() >= 8) {
+    //         this.password = nuevaContrasena; 
+    //         System.out.println("Contraseña cambiada exitosamente.");
+    //         return true;
+    //     } else {
+    //         System.out.println("Error: La nueva contraseña debe tener al menos 8 caracteres.");
+    //         return false;
+    //     }
+    // }
 
-    // Muestra la información del perfil del usuario.
+    // // Muestra la información del perfil del usuario.
 
-    public void verPerfil() {
-        System.out.println("--- Información del Perfil ---");
-        System.out.println("ID de Usuario: " + this.idUser);
-        System.out.println("Nombre: " + this.name);
-        System.out.println("Carrera: " + this.career);
-        System.out.println("Teléfono: " + this.phone);
-        System.out.println("Email: " + this.email);
-        System.out.println("-----------------------------");
-}
+    // public void verPerfil() {
+    //     System.out.println("--- Información del Perfil ---");
+    //     System.out.println("ID de Usuario: " + this.idUser);
+    //     System.out.println("Nombre: " + this.name);
+    //     System.out.println("Carrera: " + this.career);
+    //     System.out.println("Teléfono: " + this.phone);
+    //     System.out.println("Email: " + this.email);
+    //     System.out.println("-----------------------------");
+    // }
 
 }
